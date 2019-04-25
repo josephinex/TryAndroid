@@ -25,10 +25,10 @@ public class MainActivity extends AppCompatActivity {
         });
 
         Button googleButton = findViewById(R.id.googleBtn);
-        secondActivityButton.setOnClickListener(new View.OnClickListener() {
+        googleButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String google = "www.google.com";
+                String google = "http://www.google.com";
                 Uri webAddress = Uri.parse(google);
                 Intent goToGoogle = new Intent(Intent.ACTION_VIEW, webAddress);
                 if(goToGoogle.resolveActivity(getPackageManager()) != null){
