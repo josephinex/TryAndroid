@@ -1,1 +1,1 @@
-include ':app', ':newfeatures', ':galleryrecyclerview'
+include ':app', ':newfeatures', ':galleryrecyclerview', ':menu.example'
